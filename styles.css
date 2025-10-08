@@ -5,12 +5,12 @@
 }
 
 :root {
-  --color-primary: #2570a8;
+  --color-primary: #1d4f8c;
   --color-secondary: #ee8f5c;
   --color-dark: #1f2a37;
   --color-muted: #5b6770;
   --color-light: #f6f7f9;
-  --color-primary-dark: #1c5782;
+  --color-primary-dark: #163f6d;
   --font-heading: "Playfair Display", Georgia, serif;
   --font-body: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
 }
@@ -58,33 +58,15 @@ img {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.6rem;
   font-family: var(--font-heading);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--color-dark);
-}
-
-.logo-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-primary), #379cd1);
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.95rem;
-  letter-spacing: 0.12em;
-  box-shadow: 0 12px 22px rgba(37, 112, 168, 0.35);
+  color: var(--color-primary);
 }
 
 .logo-text {
   display: flex;
   flex-direction: column;
   line-height: 1.05;
-  text-transform: none;
   letter-spacing: normal;
 }
 
