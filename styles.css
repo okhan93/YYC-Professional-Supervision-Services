@@ -595,6 +595,39 @@ img {
   margin: 0;
 }
 
+/* Pricing section styling */
+.pricing {
+  background: linear-gradient(135deg, #fff8e7, #fffbf0);
+}
+
+.pricing-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 20px 45px rgba(245, 166, 35, 0.15);
+  border: 3px solid var(--color-secondary);
+}
+
+.pricing-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-content h2 {
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.pricing-description {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--color-muted);
+  margin-bottom: 2rem;
+}
+
 .pricing-note {
   background: linear-gradient(135deg, #fff8e7, #fffbf0);
   padding: 2rem;
@@ -671,11 +704,24 @@ img {
 
 @media (max-width: 720px) {
   .nav-container {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo {
+    width: 100%;
+    justify-content: center;
   }
 
   .logo-image {
-    height: 40px;
+    height: 50px;
+    max-width: 100%;
+  }
+
+  .site-header .primary-cta {
+    width: 100%;
+    text-align: center;
   }
 
   .footer-logo {
@@ -699,6 +745,10 @@ img {
   }
 
   .service-card-simple {
+    padding: 2rem 1.5rem;
+  }
+
+  .pricing-content {
     padding: 2rem 1.5rem;
   }
 }
