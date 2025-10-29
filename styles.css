@@ -5,12 +5,12 @@
 }
 
 :root {
-  --color-primary: #1d4f8c;
-  --color-secondary: #ee8f5c;
-  --color-dark: #1f2a37;
+  --color-primary: #003c5f;
+  --color-secondary: #f5a623;
+  --color-dark: #003c5f;
   --color-muted: #5b6770;
   --color-light: #f6f7f9;
-  --color-primary-dark: #163f6d;
+  --color-primary-dark: #002b44;
   --font-heading: "Playfair Display", Georgia, serif;
   --font-body: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
 }
@@ -61,6 +61,12 @@ img {
   gap: 0.6rem;
   font-family: var(--font-heading);
   color: var(--color-primary);
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
+  display: block;
 }
 
 .logo-text {
@@ -139,7 +145,7 @@ img {
 
 .hero {
   padding: 5.5rem 0 4.5rem;
-  background: linear-gradient(120deg, #edf4f9, #ffffff 48%);
+  background: linear-gradient(120deg, #e8f2f7, #ffffff 48%);
 }
 
 .hero-grid {
@@ -147,6 +153,20 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 3rem;
   align-items: center;
+}
+
+.hero-copy-centered {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-copy-centered h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 3.6rem);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: var(--color-dark);
 }
 
 .hero-copy h1 {
@@ -172,11 +192,20 @@ img {
   max-width: 34rem;
 }
 
+.hero-copy-centered .lead {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .hero-actions {
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.hero-copy-centered .hero-actions {
+  justify-content: center;
 }
 
 .hero-card {
@@ -427,6 +456,13 @@ img {
   padding: 3rem 0;
 }
 
+.footer-logo {
+  height: 50px;
+  width: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -457,12 +493,20 @@ img {
 }
 
 /* Enhanced checkmark list styling */
-.checkmark-list {
+.checkmark-list,
+.checkmark-list-centered {
   list-style: none;
   padding-left: 0;
 }
 
-.checkmark-list li {
+.checkmark-list-centered {
+  max-width: 600px;
+  margin: 2rem auto 0;
+  text-align: left;
+}
+
+.checkmark-list li,
+.checkmark-list-centered li {
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
@@ -516,18 +560,18 @@ img {
 }
 
 .service-card-simple {
-  background: linear-gradient(135deg, #1f2a37, #2d3748);
+  background: linear-gradient(135deg, #003c5f, #00527d);
   padding: 2.5rem 2rem;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 32px rgba(0, 60, 95, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .service-card-simple:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 45px rgba(0, 60, 95, 0.5);
   border-color: var(--color-secondary);
 }
 
@@ -552,7 +596,7 @@ img {
 }
 
 .pricing-note {
-  background: linear-gradient(135deg, #edf4f9, #f6f7f9);
+  background: linear-gradient(135deg, #fff8e7, #fffbf0);
   padding: 2rem;
   border-radius: 16px;
   margin-top: 3rem;
@@ -628,6 +672,14 @@ img {
 @media (max-width: 720px) {
   .nav-container {
     flex-wrap: wrap;
+  }
+
+  .logo-image {
+    height: 40px;
+  }
+
+  .footer-logo {
+    height: 40px;
   }
 
   .hero {
