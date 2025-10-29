@@ -456,6 +456,175 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* Enhanced checkmark list styling */
+.checkmark-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checkmark-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-dark);
+}
+
+.checkmark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-secondary);
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* About section enhanced styling */
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(31, 42, 55, 0.12);
+}
+
+.about-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--color-muted);
+}
+
+/* Services section enhanced styling */
+.services-grid-simple {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2.5rem 0;
+}
+
+.service-card-simple {
+  background: linear-gradient(135deg, #1f2a37, #2d3748);
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-card-simple:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+  border-color: var(--color-secondary);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  filter: brightness(1.2);
+}
+
+.service-card-simple h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  color: #ffffff;
+}
+
+.service-card-simple p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.pricing-note {
+  background: linear-gradient(135deg, #edf4f9, #f6f7f9);
+  padding: 2rem;
+  border-radius: 16px;
+  margin-top: 3rem;
+  border-left: 4px solid var(--color-secondary);
+}
+
+.pricing-note p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-dark);
+}
+
+.pricing-note strong {
+  color: var(--color-primary);
+}
+
+/* Contact section enhanced styling */
+.contact-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #edf4f9, #ffffff);
+  padding: 4rem 3rem;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(31, 42, 55, 0.15);
+  border: 1px solid rgba(37, 112, 168, 0.15);
+}
+
+.contact-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-card h2 {
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.contact-description {
+  font-size: 1.15rem;
+  color: var(--color-muted);
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  margin: 2rem 0;
+}
+
+.email-link {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(37, 112, 168, 0.15);
+}
+
+.email-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 112, 168, 0.25);
+  background: var(--color-light);
+}
+
+.contact-card .hero-actions {
+  margin-top: 2rem;
+  justify-content: center;
+}
+
 @media (max-width: 720px) {
   .nav-container {
     flex-wrap: wrap;
@@ -467,5 +636,17 @@ img {
 
   .contact-form {
     padding: 1.5rem;
+  }
+
+  .contact-card {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .about-content {
+    padding: 1.5rem;
+  }
+
+  .service-card-simple {
+    padding: 2rem 1.5rem;
   }
 }
